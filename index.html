@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"></meta>
+        <title>Fractal tree</title>
+        <link rel="stylesheet" href=".\css.css"></link>
+    </head>
+    <body>
+        <h1>
+            Fractal Tree
+        </h1>
+        <canvas id="FractalTree"></canvas>
+
+        <div id="settings">
+        <h2>Settings</h2>
+        Starting Length&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input id="startLength" type="text" value="150"></input><br /><br />
+        Minimum Branch Length&emsp;&emsp;<input id="minimumLength" type="text" value="10"></input><br /><br />
+        <label for="leaves"> Leaves On?</label>
+        <input id="leaves" type="checkbox" checked="true"></input><br /><br />
+
+        <b>Left Branch</b><br /><br />
+        Branch Length Multiplier&emsp;&emsp;<input id="leftLengthMulti" type="text" value="0.67"></input><br /><br />
+        Rotation Angle (degrees)&nbsp;&emsp;&emsp;<input id="leftRotAngle" type="text" value="20"></input><br /><br />
+
+        <b>Right Branch</b><br /><br />
+        Branch Length Multiplier&emsp;&emsp;<input id="rightLengthMulti" type="text" value="0.67"></input><br /><br />
+        Rotation Angle (degrees)&nbsp;&emsp;&emsp;<input id="rightRotAngle" type="text" value="45"></input><br /><br />
+        
+        <button onclick="reset()">Regenerate Tree</button> 
+        </div>
+        
+
+        <canvas id="FractalForest"></canvas>
+        <script src="forestCanvas.js"></script>
+        <script src="treeCanvas.js"></script>
+    </body>
+</html>
